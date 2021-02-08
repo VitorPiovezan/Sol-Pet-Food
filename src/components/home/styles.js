@@ -255,6 +255,59 @@ export const BackgroundContato = styled.img`
 `
 //Footer
 
+
+
+export const Footer = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 10%;
+    font-family: 'Ubuntu';
+    margin-bottom: 50px;
+`
+
+export const Atendimento = styled.div`
+`
+
+export const TitleFooter = styled.h1`
+    padding: 0px 0px 40px 0px ;
+    font-size: 25pt;
+`
+
+export const TextFooter = styled.p`
+    padding: 7px 0px;
+    font-size: 12pt;
+`
+
+export const RedesSociais = styled.div`
+
+`
+
+export const ButtomFacebook = styled.div`
+    margin-right: 10px;
+`
+
+export const ButtomInsta = styled.div`
+
+`
+
+export const ImgBackgroundFooter = styled.img`
+
+`
+
+export const Mapa = styled.div`
+
+`
+
+export const B = styled.label`
+    font-weight: bold;
+`
+
+export const ButtonsSocial = styled.div`
+    display: flex;
+    flex-direction: row;
+`
+
 // Footer,
 // Atendimento,
 // TitleFooter,

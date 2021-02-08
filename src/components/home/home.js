@@ -42,16 +42,18 @@ import {
   ContatoImagem,
   BackgroundContato,
   TextBox,
-  // Footer,
-  // Atendimento,
-  // TitleFooter,
-  // TextFooter,
-  // RedesSociais,
-  // ButtomFacebook,
-  // ButtomInsta,
-  // ImgBackgroundFooter,
-  // Mapa,
-  Container
+  Footer,
+  Atendimento,
+  TitleFooter,
+  TextFooter,
+  RedesSociais,
+  ButtomFacebook,
+  ButtomInsta,
+  ImgBackgroundFooter,
+  Mapa,
+  Container,
+  B,
+  ButtonsSocial
   
 
 } from './styles'
@@ -79,7 +81,7 @@ function Home() {
       <div>
         <Contato>
             <FormContato>
-              <TitleContato><Img1 src={textimg1}/>Entre em Contato<Img1 src={textimg1}/></TitleContato>
+              <TitleContato><Img1 src={pata}/>Entre em Contato<Img1 src={textimg1}/></TitleContato>
                 <ImputNome placeholder="Seu Nome" type="text"
                                                   value={nome}
                                                   onChange={e => setNome(e.target.value)}></ImputNome>
@@ -92,9 +94,6 @@ function Home() {
                 <ButtomWhats><a href={linkWhats} target="blank"><ImgBackground src={whats}/></a></ButtomWhats>
                 <ButtomFace><ImgBackground /></ButtomFace>
             </FormContato>
-                <ContatoImagem>
-                  <BackgroundContato src={dogcell}/>
-                </ContatoImagem>
           </Contato>
       </div>
       )
@@ -155,7 +154,7 @@ function Home() {
                 </ContatoImagem>
           </Contato>
   
-              {/* <Footer>
+              <Footer>
                 <Atendimento>
                   <TitleFooter>Atendimento</TitleFooter>
                   <TextFooter><B>Email: </B>solpetfood@gmail.com</TextFooter>
@@ -165,14 +164,16 @@ function Home() {
   
                 <RedesSociais>
                   <TitleFooter>Redes Socias</TitleFooter>
-                  <ButtomFacebook><ImgBackgroundFooter /></ButtomFacebook>
-                  <ButtomInsta><ImgBackgroundFooter /></ButtomInsta>
+                  <ButtonsSocial>
+                  <ButtomFacebook><a href={face} target="blank"><ImgBackground src={face}/></a></ButtomFacebook>
+                  <ButtomInsta><a href={insta} target="blank"><ImgBackground src={insta}/></a></ButtomInsta></ButtonsSocial>
                 </RedesSociais>
   
                 <Mapa>
                   <TitleFooter>Mapa</TitleFooter>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4421.6215132760635!2d-48.4983711737666!3d-21.2664921336997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9469f1921e797%3A0xc0ad2a5db95abcab!2sR.%20Adelino%20Buzinaro%20-%20Vila%20Sao%20Cristovao%2C%20Monte%20Alto%20-%20SP%2C%2015910-000!5e0!3m2!1spt-BR!2sbr!4v1612753029662!5m2!1spt-BR!2sbr" width="120%" height="250" frameborder="0" styles="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </Mapa>
-              </Footer> */}
+              </Footer>
         </Container>
       </div>
     );
