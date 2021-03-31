@@ -10,6 +10,8 @@ import dogcell from '../../assets/images/cachorrocelular.png';
 import whats from '../../assets/logos/whats.png'
 import pata from '../../assets/images/fg.png';
 
+import HomeMobile from '../mobile/home/home'
+
 import {
   Menu,
   Banner,
@@ -38,7 +40,7 @@ import {
   ImputNome,
   ButtomWhats,
   ImgBackground,
-  ButtomFace,
+  ButtomW,
   ContatoImagem,
   BackgroundContato,
   TextBox,
@@ -53,14 +55,20 @@ import {
   Mapa,
   Container,
   B,
-  ButtonsSocial
+  ButtonsSocial,
+  FormContatoCelular,
+  TextBoxCelular,
+  TextButtomWhats,
+  LinkZap,
+  LinkForm
+
   
 
 } from './styles'
 
 
 
-function Home() {
+export default function Home() {
 
   const [widthWindow, setWidthWindow] = useState(window.screen.availWidth);
   const [linkWhats, setLinkWhats] = useState("");
@@ -78,24 +86,7 @@ function Home() {
 
   if (window.screen.width <= 500){
     return (
-      <div>
-        <Contato>
-            <FormContato>
-              <TitleContato><Img1 src={pata}/>Entre em Contato<Img1 src={textimg1}/></TitleContato>
-                <ImputNome placeholder="Seu Nome" type="text"
-                                                  value={nome}
-                                                  onChange={e => setNome(e.target.value)}></ImputNome>
-                <ImputNome placeholder="Seu Email"type="text"
-                                                  value={email}
-                                                  onChange={e => setEmail(e.target.value)}></ImputNome>
-                <TextBox placeholder="Sua Mensagem"type="text"
-                                                  value={mensagem}
-                                                  onChange={e => setMensagem(e.target.value)}></TextBox>
-                <ButtomWhats><a href={linkWhats} target="blank"><ImgBackground src={whats}/></a></ButtomWhats>
-                <ButtomFace><ImgBackground /></ButtomFace>
-            </FormContato>
-          </Contato>
-      </div>
+      <HomeMobile/>
       )
   } else {
     return (
@@ -105,9 +96,9 @@ function Home() {
           <Menu>
             <Nav>
               <NavTab>
-                <NavLi><Link href="https://agenciaolcan.com.br">Sobre</Link></NavLi>
-                <NavLi>Produtos</NavLi>
-                <NavLi>Contatos</NavLi>
+                <NavLi><Link href="https://agenciaolcan.com.br"><B>Sobre</B></Link></NavLi>
+                <NavLi><B>Produtos</B></NavLi>
+                <NavLi><B>Contatos</B></NavLi>
               </NavTab>
               <ContatoTab>
                 <ContatoLi><RedeSocial src={face} /></ContatoLi>
@@ -127,9 +118,9 @@ function Home() {
               <ProductImagem src={produto} />
               <DadosProduct>
                 <TextProduct>Nossa receita de sucesso é preparar comidas deliciosas. saudáveis e nutritivas para os amiguinhos de quatro patas! Tudo fresquinho sem conservantes, feito de forma caseira. É assim que Sol Pet Food trabalha.</TextProduct>
-                <a href="https://agenciaolcan.com.br"><ButtonProdut>
+                <LinkForm href="/form"><ButtonProdut>
                   <TextButton>Preencha Já</TextButton>
-                </ButtonProdut></a>
+                </ButtonProdut></LinkForm>
               </DadosProduct>
             </DadosDieta>
           </Sobre>
@@ -146,8 +137,7 @@ function Home() {
                 <TextBox placeholder="Sua Mensagem"type="text"
                                                   value={mensagem}
                                                   onChange={e => setMensagem(e.target.value)}></TextBox>
-                <ButtomWhats><a href={linkWhats} target="blank"><ImgBackground src={whats}/></a></ButtomWhats>
-                <ButtomFace><ImgBackground /></ButtomFace>
+                <ButtomWhats><LinkZap href={linkWhats} target="blank"><ImgBackground src={whats}/><ButtomW><TextButtomWhats>Enviar</TextButtomWhats></ButtomW></LinkZap></ButtomWhats>
             </FormContato>
                 <ContatoImagem>
                   <BackgroundContato src={dogcell}/>
@@ -181,5 +171,3 @@ function Home() {
 
   
 }
-
-export default Home;
