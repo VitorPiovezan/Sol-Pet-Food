@@ -1,6 +1,7 @@
 import React from 'react'
 import Home from './home/home'
 import Form from './form/form'
+import Sobre from './sobre/sobre'
 import {
   BrowserRouter as Router,
   Route,
@@ -15,6 +16,7 @@ export default function Routes(){
                 <Route exact path='/' component={Home}/>
             <Switch>
                 <Route exact path='/form' component={Form}/>
+                <Route exact path='/sobre' component={Sobre}/>
             </Switch>
         </Router>
     )

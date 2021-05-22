@@ -96,7 +96,7 @@ export default function Home() {
           <Menu>
             <Nav>
               <NavTab>
-                <NavLi><Link href="https://agenciaolcan.com.br"><B>Sobre</B></Link></NavLi>
+                <NavLi><Link href="/sobre"><B>Sobre</B></Link></NavLi>
                 <NavLi><B>Produtos</B></NavLi>
                 <NavLi><B>Contatos</B></NavLi>
               </NavTab>
