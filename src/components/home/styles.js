@@ -16,38 +16,48 @@ export const Teste = styled.h1`
 `;
 
 export const Menu = styled.div`
-    width: 100%;
-    height: 70px;
+    margin: auto;
+    min-width: 350px;
+    height: 120px;
     background-color: #ffffff;
     font-family: 'Ubuntu';
     text-align: center;
 `
 
 export const Banner = styled.div`
-    width: 100%;
-    height: 600px;
-    text-align: center;
+    /* width: 100%;
+    min-width: 500px;
+    min-height: 300px;
     background-color: #FDC92B;
+    max-height: 600px; */
+    text-align: center;
 `
 export const Imagem = styled.img`
-    height: 100%;
+    max-height: 600px;
+    min-height: 250px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    object-position: left;
 `
 
 export const Logo = styled.img`
     height: 100px;
-    position: relative;
-    margin-top: -55px;
 `
 export const Sobre = styled.div`
     width: 100%;
-    height: 600px;
+    min-width: 350px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px 0px 40px 0px;
 `
 export const TituloSobre = styled.h1`
-    padding: 70px;
+    height: 50px;
     color: #282828;
-    font-size: 30pt;
-
+    font-size: 26pt;
+    padding-bottom: 70px;
 `;
 
 //Menu Nav
@@ -90,6 +100,7 @@ export const RedeSocial = styled.img`
 export const Link = styled.a`
     text-decoration: none;
     color: #282828;
+    font-weight: bold;
 `
 export const ImagemText = styled.img`
     height: 35px;
@@ -102,26 +113,29 @@ export const ImagemText = styled.img`
 
 
 export const DadosDieta = styled.div`
+    height: 100%;
     padding: 10px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
 `
 export const DadosProduct = styled.div`
+    min-width: 350px;
     height: 250px;
 `
 export const TextProduct = styled.p`
-    width: 500px;
-    text-align: left;
-    font-size: 15pt;
+    min-width: 200px;
+    max-width: 500px;
+    font-size: 1.2rem;
     padding: 20px 0px;
     line-height: 1.5;
     color: #282828;
 `
 export const ProductImagem = styled.img`
-    height: 250px;
-    margin-right: 130px;
+    max-height: 200px;
+    min-width: 50px;
+    padding: 0px 70px 50px 70px;
 `
 export const ButtonProdut = styled.div`
     margin-top: 25px;
@@ -129,7 +143,6 @@ export const ButtonProdut = styled.div`
     width: 200px;
     height: 50px;
     border-radius: 25px;
-    margin-left: 100px;
 `
 export const TextButton = styled.p`
     font-weight: bold;
@@ -144,14 +157,15 @@ export const TextButton = styled.p`
 
 
 export const Contato = styled.div`
-    width: 100%;
-    border: 0.2px dotted #282828;
     margin-bottom: 50px;  
     text-align: center;
     height: 50%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     max-width: 1000px;
+    min-width: 350px;
+    justify-content: center;
 `
 
 export const TitleContato = styled.h1`
@@ -227,13 +241,14 @@ export const TextBox = styled.textarea`
     }
 `
 
-export const FormContato = styled.div`
-    margin-top: 40px;
-    width: 50%;
+export const FormContato = styled.div`  
+    border: 0.2px dotted #282828;
+    width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 85%;
+    height: 405px;
+    padding: 20px 0px;
 `
 
 
@@ -252,6 +267,7 @@ export const ButtomWhats = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 20px 0px;
 `
 
 export const ImgBackground = styled.img`
@@ -280,14 +296,16 @@ export const ButtomW = styled.div`
 `
 
 export const ContatoImagem = styled.div`
-    max-width: 50%;
+    height: 445px;
+    border: 0.2px dotted #282828;
+    width: 350px;
     opacity: 80%;
-    display: flex;
 `
 
 export const BackgroundContato = styled.img`
-    width: 100%;
     height: 100%;
+    width: 100%;
+    object-fit: cover;
 `
 
 export const LinkZap = styled.a`
@@ -308,31 +326,35 @@ export const LinkZap = styled.a`
 
 
 export const Footer = styled.div`
+    border-top: 1px solid #282828;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0px 10%;
+    padding: 30px 0px 0px 0px;
     margin-bottom: 50px;
     width: 90%;
     max-width: 1000px;
-    min-width: 800px;
+    min-width: 350px;
 `
 
 export const Atendimento = styled.div`
+padding: 0px 20px;
+margin-bottom: 20px;
 `
 
 export const TitleFooter = styled.h1`
     padding: 0px 0px 40px 0px ;
-    font-size: 25pt;
+    font-size: 2.0rem;
 `
 
 export const TextFooter = styled.p`
     padding: 7px 0px;
-    font-size: 12pt;
+    font-size: 1.0rem;
 `
 
 export const RedesSociais = styled.div`
-
+    padding: 0 20px;
+margin-bottom: 20px;
 `
 
 export const ButtomFacebook = styled.div`
@@ -348,7 +370,6 @@ export const ImgBackgroundFooter = styled.img`
 `
 
 export const Mapa = styled.div`
-
 `
 
 export const B = styled.label`
@@ -362,6 +383,9 @@ export const ButtonsSocial = styled.div`
 
 export const LinkForm = styled.a`
     text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 `
 
 // Footer,

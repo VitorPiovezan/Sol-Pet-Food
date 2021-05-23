@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Source Sans Pro';
 }
 
 html, body, div, span, applet, object, iframe,
@@ -22,14 +24,17 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	vertical-align: baseline;
+	font-family: 'Source Sans Pro';
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
+	font-family: 'Source Sans Pro';
 }
 body {
 	line-height: 1;
+	font-family: 'Source Sans Pro';
 }
 ol, ul {
 	list-style: none;

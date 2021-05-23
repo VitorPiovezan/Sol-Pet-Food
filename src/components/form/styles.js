@@ -18,12 +18,13 @@ export const Formulario = styled.div`
 
 export const TextForm = styled.p`
     max-width: 700px;
-    font-size: 15pt;
+    min-width: 350px;
+    font-size: 1.2rem;
     line-height: 1.5;
     text-align: left;
     `
 export const TituloSobre = styled.h1`
-    padding: 70px;
+    padding-bottom: 70px;
     color: #282828;
     font-size: 35pt;
     text-align: center;
@@ -39,7 +40,8 @@ export const TituloSobreD = styled.h1`
 // dados form
 
 export const Dados = styled.div`
-    width: 500px;
+    max-width: 500px;
+    min-width: 350px;
     color: #282828;
 `
 
@@ -68,6 +70,8 @@ export const DivLong = styled.div`
     margin: auto;
     width: 80%;
     margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 0px;
 `
 
 export const MasterDivShort = styled.div`
@@ -75,6 +79,8 @@ export const MasterDivShort = styled.div`
     width: 80%;
     margin-bottom: 10px;
     display: flex;
+    margin-left: 20px;
+    margin-right: 0px;
 `
 
 export const DivShort = styled.div`
@@ -119,13 +125,13 @@ export const BottonEnviar = styled.div`
 
     height: 60px;
     width: 250px;
-    background-color: #FDC92B;
+    background-color: #97c56a;
     border-radius: 0px 40px 0px 40px;
     margin-left: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #282828;
+    color: #fff;
     font-size: 20pt;
     font-weight: bold;
     margin-top: 40px;

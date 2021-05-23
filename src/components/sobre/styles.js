@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Cabec = styled.div`
     width: 100%;
     height: 150px;
-    background-color: #FDC92B;
+    background-color: ${(props) => props.colorProp};
     display: flex;
     margin-bottom: 50px;
 `
@@ -130,3 +130,52 @@ export const BottonEnviar = styled.div`
     font-weight: bold;
     margin-top: 40px;
 `
+
+export const Cards = styled.div`
+    padding-bottom: 45px;
+    min-width: 350px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+`
+
+export const Card = styled.div`
+    width: 300px;
+    border-radius: 30px;
+    padding: 20px;
+`
+
+export const DivImg = styled.div`
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+`
+
+export const ImagemSobre = styled.img`
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+`
+
+export const Content = styled.div`
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+`
+
+export const Title = styled.h2`
+    padding: 20px;
+`
+
+export const SobreText = styled.p`
+    text-align: left;
+    padding: 0px 15px 30px 15px;
+`
+                   
