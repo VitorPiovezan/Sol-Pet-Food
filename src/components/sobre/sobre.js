@@ -28,7 +28,7 @@ export default function Sobre() {
                 <header>                  
                     <HeaderMenu/>
                 </header>
-                <Cabec colorProp={'#97c56a'}/>
+                <Cabec colorProp={'#FDC92B'}/>
                 <Container>
 
                     <Cards>
@@ -57,7 +57,7 @@ export default function Sobre() {
                    
                 </Container>
 
-                <Cabec colorProp={'#97c56a'} />
+                <Cabec colorProp={'#FDC92B'} />
                 <Container>
                     <Footer/>
                 </Container>

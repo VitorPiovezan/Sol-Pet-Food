@@ -74,7 +74,7 @@ export default function Home() {
               <DadosProduct>
                 <TextProduct>Nossa receita de sucesso é preparar comidas deliciosas. saudáveis e nutritivas para os amiguinhos de quatro patas! Tudo fresquinho sem conservantes, feito de forma caseira. É assim que Sol Pet Food trabalha.</TextProduct>
                 <LinkForm href="/form"><ButtonProdut>
-                  <TextButton>Preencha Já</TextButton>
+                  <TextButton>Faça seu Orçamento</TextButton>
                 </ButtonProdut></LinkForm>
               </DadosProduct>
             </DadosDieta>

@@ -100,7 +100,7 @@ export default function Form() {
         <TextForm>É muito importante sabermos o maior número de informações possíveis do seu pet. Com esses dados vamos fazer o levantamento de necessidade calórica, para montar a dieta perfeita!</TextForm>
         <Dados>
 
-            <TituloSobreD>Perfil <ImagemText src={pata} /> </TituloSobreD>
+            <TituloSobreD>Faça seu Orçamento <ImagemText src={pata} /> </TituloSobreD>
 
             <DivLong>
             <TituloLongo>Seu Nome</TituloLongo>
